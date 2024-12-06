@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&family=Poppins&family=Roboto:wght@500&family=Rubik+Bubbles&family=Tomorrow:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&family=Poppins&family=Roboto:wght@500&family=Rubik+Bubbles&family=Tomorrow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -289,80 +288,109 @@
         </div>
       </section>
       <!-- Accordion Section -->
-       <section class="w-full text-center py-12 bg-black mb-10 mx-5">
-        <div class="w-full max-w-md mx-auto bg-white border border-gray-200 shadow-md">
+      <section id="accordion"
+        class="w-full text-center py-12 bg-black mb-10 mx-5">
+        <div
+          class="w-full max-w-md mx-auto bg-white border border-gray-200 shadow-md">
           <!-- Create a Wallet -->
           <div class="border-b border-gray-200">
-              <button class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700" onclick="toggleAccordion(this)">
-                  <span>HOW TO BUY: Create a Wallet</span>
-                  <span class="accordion-icon">+</span>
-              </button>
-              <div class="p-4 hidden bg-black text-left">
-                  <p>Go to Settings in your wallet and locate Networks. You might have to manually add a network and input the following details for Base Chain:</p>
-                  <ul class="list-disc pl-5 mt-2">
-                      <li><strong>Network Name:</strong> Base</li>
-                      <li><strong>RPC Endpoint:</strong> https://mainnet.base.org/</li>
-                      <li><strong>Chain ID:</strong> 8453</li>
-                      <li><strong>Currency Symbol:</strong> ETH</li>
-                      <li><strong>Block Explorer:</strong> https://basescan.org</li>
-                  </ul>
-                  <p class="mt-2">Click on CONNECT TO BASE after saving. Upon completing this step, you should be able to connect to Base by choosing it from the network selection menu in your wallet.</p>
-              </div>
+            <button
+              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700"
+              onclick="toggleAccordion(this)">
+              <span>HOW TO BUY: Create a Wallet</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="p-4 hidden bg-black text-left">
+              <p>Go to Settings in your wallet and locate Networks. You might
+                have to manually add a network and input the following details
+                for Base Chain:</p>
+              <ul class="list-disc pl-5 mt-2">
+                <li><strong>Network Name:</strong> Base</li>
+                <li><strong>RPC Endpoint:</strong>
+                  https://mainnet.base.org/</li>
+                <li><strong>Chain ID:</strong> 8453</li>
+                <li><strong>Currency Symbol:</strong> ETH</li>
+                <li><strong>Block Explorer:</strong> https://basescan.org</li>
+              </ul>
+              <p class="mt-2">Click on CONNECT TO BASE after saving. Upon
+                completing this step, you should be able to connect to Base by
+                choosing it from the network selection menu in your wallet.</p>
+            </div>
           </div>
           <!-- Fund Your Wallet -->
           <div class="border-b border-gray-200">
-              <button class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700" onclick="toggleAccordion(this)">
-                  <span>HOW TO BUY: Fund Your Wallet</span>
-                  <span class="accordion-icon">+</span>
-              </button>
-              <div class="p-4 hidden bg-black text-left">
-                  <p>To fund your wallet with Base ETH, you have some options:</p>
-                  <ul class="list-disc pl-5 mt-2">
-                      <li>Transfer ETH from Coinbase, Binance, or whatever exchange you prefer to your Base wallet. Make sure you select Base as the network.</li>
-                      <li>You can utilize the following bridges to transfer ETH to Base ETH from another chain:
-                          <ul class="list-disc pl-5">
-                              <li><strong>Base Bridge:</strong> <a href="https://bridge.base.org/deposit" class="text-blue-500 underline">https://bridge.base.org/deposit</a></li>
-                              <li><strong>Stargate Finance:</strong> <a href="https://stargate.finance/" class="text-blue-500 underline">https://stargate.finance/</a></li>
-                              <li><strong>Orbiter Finance:</strong> <a href="https://www.orbiter.finance/" class="text-blue-500 underline">https://www.orbiter.finance/</a></li>
-                          </ul>
-                      </li>
+            <button
+              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700"
+              onclick="toggleAccordion(this)">
+              <span>HOW TO BUY: Fund Your Wallet</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="p-4 hidden bg-black text-left">
+              <p>To fund your wallet with Base ETH, you have some options:</p>
+              <ul class="list-disc pl-5 mt-2">
+                <li>Transfer ETH from Coinbase, Binance, or whatever exchange
+                  you prefer to your Base wallet. Make sure you select Base as
+                  the network.</li>
+                <li>You can utilize the following bridges to transfer ETH to
+                  Base ETH from another chain:
+                  <ul class="list-disc pl-5">
+                    <li><strong>Base Bridge:</strong> <a
+                        href="https://bridge.base.org/deposit"
+                        class="text-blue-500 underline">https://bridge.base.org/deposit</a></li>
+                    <li><strong>Stargate Finance:</strong> <a
+                        href="https://stargate.finance/"
+                        class="text-blue-500 underline">https://stargate.finance/</a></li>
+                    <li><strong>Orbiter Finance:</strong> <a
+                        href="https://www.orbiter.finance/"
+                        class="text-blue-500 underline">https://www.orbiter.finance/</a></li>
                   </ul>
-              </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- CONNECT YOUR WALLET -->
           <div class="border-b border-gray-200">
-              <button class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700" onclick="toggleAccordion(this)">
-                  <span>HOW TO BUY: CONNECT YOUR WALLET</span>
-                  <span class="accordion-icon">+</span>
-              </button>
-              <div class="p-4 hidden bg-black text-left">
-                  <ol class="list-decimal pl-5 mt-2">
-                      <li>Change the network in your wallet to Base.</li>
-                      <li>Go to Uniswap at <a href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE" class="text-blue-500 underline">https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE</a>.</li>
-                      <li>Connect your wallet with Uniswap.</li>
-                      <li>In the lower swap field, choose a token and enter the official BASEDCHILLGUY on Base contract address: <code>0x0230e3e92840E2Db566F061AA1c4C6B2BEf8bEC0</code>.</li>
-                  </ol>
-              </div>
+            <button
+              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700"
+              onclick="toggleAccordion(this)">
+              <span>HOW TO BUY: CONNECT YOUR WALLET</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="p-4 hidden bg-black text-left">
+              <ol class="list-decimal pl-5 mt-2">
+                <li>Change the network in your wallet to Base.</li>
+                <li>Go to Uniswap at <a
+                    href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE"
+                    class="text-blue-500 underline">https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE</a>.</li>
+                <li>Connect your wallet with Uniswap.</li>
+                <li>In the lower swap field, choose a token and enter the
+                  official BASEDCHILLGUY on Base contract address:
+                  <code>0x0230e3e92840E2Db566F061AA1c4C6B2BEf8bEC0</code>.</li>
+              </ol>
+            </div>
           </div>
           <!-- Swap Your Tokens -->
           <div>
-              <button class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700" onclick="toggleAccordion(this)">
-                  <span>HOW TO BUY: Swap Your Tokens</span>
-                  <span class="accordion-icon">+</span>
-              </button>
-              <div class="p-4 hidden bg-black text-left">
-                  <ol class="list-decimal pl-5 mt-2">
-                      <li>Input the amount of ETH you want to spend.</li>
-                      <li>Adjust the slippage to your preference by clicking on settings.</li>
-                      <li>Click or Tap Swap.</li>
-                      <li>Confirm in your wallet.</li>
-                      <li>You are done!</li>
-                  </ol>
-              </div>
+            <button
+              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-500 hover:bg-gray-700"
+              onclick="toggleAccordion(this)">
+              <span>HOW TO BUY: Swap Your Tokens</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="p-4 hidden bg-black text-left">
+              <ol class="list-decimal pl-5 mt-2">
+                <li>Input the amount of ETH you want to spend.</li>
+                <li>Adjust the slippage to your preference by clicking on
+                  settings.</li>
+                <li>Click or Tap Swap.</li>
+                <li>Confirm in your wallet.</li>
+                <li>You are done!</li>
+              </ol>
+            </div>
           </div>
-      </div>
-      
-       </section>
+        </div>
+
+      </section>
 
       <!-- social section -->
       <section id="social">
@@ -467,8 +495,6 @@
         icon.textContent = '-';
     }
 }
-
-
 </script>
 
   </html>
