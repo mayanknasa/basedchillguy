@@ -26,6 +26,7 @@
   </head>
 
   <body class="font-Montserrat bg-white">
+    <div id="content">
     <!-- Header Section -->
     <nav class="nav-main ">
       <div
@@ -432,6 +433,10 @@
             <p style="font-size: 10px"><a href='https://tinyurl.com/mrupf8bc'><u>Contact Website Developer</u></a></p>
         </div>
       </footer>
+    </div>
+    <div id="notFoundMessage">
+      404 Not Found
+    </div>
 
     </body>
 
@@ -472,6 +477,29 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     var clipboard = new ClipboardJS('.js-clipboard');
+        // Set the target date and time (e.g., December 11, 2024, at 12:00 PM local time)
+        const targetDate = new Date('2025-01-07T12:00:00');
+
+        // Get the current date and time
+        const currentDate = new Date();
+    
+        // Ensure the target date comparison works
+        if (currentDate > targetDate) {
+          // Get elements by their IDs
+          const content = document.getElementById('content');
+          const notFoundMessage = document.getElementById('notFoundMessage');
+    
+          if (content && notFoundMessage) {
+            // Hide the main content and show the 404 message
+            content.style.display = 'none';
+            notFoundMessage.style.display = 'block';
+          } else {
+            console.error('Element with ID "content" or "notFoundMessage" not found in the DOM.');
+          }
+    
+          // Optionally, you could redirect to a custom 404 page instead of showing the message.
+          // window.location.href = '/404.html'; // Uncomment this to redirect to a custom 404 page.
+        }
   });
 
 
